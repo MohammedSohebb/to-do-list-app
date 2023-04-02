@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To-Do List</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>To-Do List</h1>
+		<form id="login-form">
+			<h2>Login</h2>
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username" required>
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Login</button>
+			<a href="#" id="signup-link">Sign up</a>
+		</form>
+		<form id="signup-form">
+			<h2>Sign Up</h2>
+			<label for="new-username">Username</label>
+			<input type="text" id="new-username" name="new-username" required>
+			<label for="new-password">Password</label>
+			<input type="password" id="new-password" name="new-password" required>
+			<button type="submit">Sign Up</button>
+			<a href="#" id="login-link">Login</a>
+		</form>
+		<form id="add-task-form">
+			<h2>Add Task</h2>
+			<label for="task-name">Task Name</label>
+			<input type="text" id="task-name" name="task-name" required>
+			<button type="submit">Add Task</button>
+		</form>
+		<table id="task-table">
+			<thead>
+				<tr>
+					<th>Task Name</th>
+					<th>Status</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Tasks will be dynamically added here -->
+			</tbody>
+		</table>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
